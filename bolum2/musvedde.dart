@@ -15,6 +15,6 @@ void main(List<String> args) {
 
   print("fiyat gir");
   dynamic fiyat = int.parse(stdin.readLineSync()!);
-  dynamic kdvfiyat = (fiyat * 1.18).toString();
+  dynamic kdvfiyat = (fiyat * 1.18);
   print("yeni fiyat $kdvfiyat");
 }

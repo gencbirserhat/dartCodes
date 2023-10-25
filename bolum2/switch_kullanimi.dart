@@ -55,11 +55,11 @@ main(List<String> args) {
 
   }
 */
-  var sayi = 13;
+  var sayi = 40;
   var bolum = sayi ~/ 10; // == (sayi / 10).toInt();
   print(bolum);
   switch (bolum) {
-    case 4.6:
+    case 4:
       print("Sayı 40dan büyüktür");
       break;
 

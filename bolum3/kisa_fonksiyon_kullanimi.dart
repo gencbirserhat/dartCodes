@@ -11,27 +11,23 @@ void main(List<String> args) {
 
   print("fark $fark");
 
-  print("çarpım : "+ sayilariCarp(12,6).toString());
+  print("çarpım : " + sayilariCarp(12, 6).toString());
 
-  print("Büyük olan sayı : "+maxOlaniBul(14,9).toString());
-  
-  print("Küçük olan sayı : "+minOlaniBul(14,19).toString());
+  print("Büyük olan sayı : " + maxOlaniBul(14, 9).toString());
 
-  
+  print("Küçük olan sayı : " + minOlaniBul(14, 19).toString());
 }
 
-void sayilariTopla(){
-
-  int sayi1=10, sayi2=5;
+void sayilariTopla() {
+  int sayi1 = 10, sayi2 = 5;
   print("toplam : ${sayi1 + sayi2}");
-
 }
 
-int sayilariCikar(int s1, int s2){
-  return (s1 - s2) ;
+int sayilariCikar(int s1, int s2) {
+  return (s1 - s2);
 }
 
-int sayilariCarp(int s1, int s2) => s1 * s2; 
+int sayilariCarp(int s1, int s2) => s1 * s2;
 /*
 int maxOlaniBul(int s1, int s2){
 

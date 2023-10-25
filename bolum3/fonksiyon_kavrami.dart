@@ -19,8 +19,9 @@ void main(List<String> args) {
   print(hacimHesapla(5, 8, 10));
 }
 
-int hacimHesapla(int en, int boy, int yukseklik) {
-  return en * boy * yukseklik;
+dynamic hacimHesapla(int en, int boy, int yukseklik) {
+  dynamic hacim = en * boy * yukseklik;
+  return hacim;
 }
 
 //parametresiz fonksiyon
