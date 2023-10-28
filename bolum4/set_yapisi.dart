@@ -15,7 +15,7 @@ main(List<String> args) {
   isimler.add("emre");
   isimler.add("emre");
   isimler.add("fatma");
-  
+
   bool sonucum = isimler.remove("emre222");
   print("sonuc : " + sonucum.toString());
 
@@ -42,6 +42,7 @@ main(List<String> args) {
     1,
   ]);
   List<int> ciftSayilar = [0, 2, 4, 6, 8, 10, 8, 6, 4, 2, 0];
+  print(ciftSayilar.reduce((v, e) => v * e));
 
   for (int s1 in numaralar) {
     print("no : $s1");
@@ -52,5 +53,17 @@ main(List<String> args) {
 
   for (int s1 in numaralar) {
     print("add alldan sonra no : $s1");
+  }
+
+  Set<String> names = Set.from(["serhat", "erme", "batu", "hakkı", "sütcü"]);
+  if (names.length == 5) {
+    names.add("umut eşşeği");
+  }
+
+  for (var s in names) {
+    print("name: $s");
+    if (s == "batu") {
+      print("hakkı batuhan sütcü");
+    }
   }
 }

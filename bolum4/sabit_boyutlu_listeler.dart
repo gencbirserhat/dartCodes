@@ -15,18 +15,17 @@ main(List<String> args) {
   sayilar[1] = 1;
   sayilar[2] = 9;
 
-
   print(sayilar);
   print(sayilar.length);
   print(sayilar[3]);
   List<String> isimler = List.filled(2, "");
   isimler[0] = 5.toString();
-  isimler[1] = "emre";
+  isimler[1] = "serhat";
 
   print(isimler);
 
   List<dynamic> karisik = List<dynamic>.filled(5, 0);
-  karisik[0] = 'emre';
+  karisik[0] = 'serhat';
   karisik[1] = 5;
   karisik[2] = false;
 

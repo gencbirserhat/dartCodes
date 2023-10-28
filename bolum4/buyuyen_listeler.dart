@@ -11,6 +11,7 @@
 main(List<String> args) {
   List<int?> sayilar = [];
   sayilar.add(1);
+  print(sayilar);
   sayilar.add(2);
   sayilar.add(3);
   sayilar.add(4);
@@ -31,5 +32,4 @@ main(List<String> args) {
   List<int> sayilar5 = [];
   sayilar5.add(5);
   sayilar4.add(10);
-  
 }
