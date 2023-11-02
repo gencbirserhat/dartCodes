@@ -1,4 +1,5 @@
 //Nesneye yönelimli programlamaya giriş
+
 /**
  * Sınıf : Kendi veri türlerimiz veya soyut olan taslaklara denir. Kendi içinde değişkenlere ve methodlara sahiptir
  * Istedigimiz bir nesnenin veya varlığın bilgisayar dillerinde tanımıdır.
@@ -13,12 +14,13 @@
 main(List<String> args) {
   int sayi = 5;
   var sayi2 = 10;
-  Ogrenci emre = Ogrenci();
+  Ogrenci emre = new Ogrenci();
   emre.ogrAd = "emre altunbilek";
   emre.ogrNo = 292;
   emre.aktifMi = true;
-  Ogrenci hasan = Ogrenci();
+  Ogrenci hasan = new Ogrenci();
   Ogrenci ayse = Ogrenci();
+  Ogrenci mehmet = new Ogrenci();
 
   var kemal = Ogrenci();
  

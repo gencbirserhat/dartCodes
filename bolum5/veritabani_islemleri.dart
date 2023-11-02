@@ -19,7 +19,7 @@ class VeritabaniIslemleri {
   VeritabaniIslemleri() {}
 
   VeritabaniIslemleri.loginWithNameandPassword(
-      String kullaniciAdi, String sifre) {
+      String this._kullaniciAdi, String this._sifre) {
    
   }
 

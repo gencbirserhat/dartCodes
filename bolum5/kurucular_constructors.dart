@@ -42,7 +42,24 @@ main(List<String> args) {
 
   suzuki.bilgileriSoyle();
   suzuki.yasHesapla();
+
+  // var motor1 = Motor(100, "honda", true);
+  // var motor2 = new Motor(700, "Yamaha", true);
+  
+  // motor1.result();
+  // motor2.result();
 }
+
+/* class Motor {
+  int? cc;
+  String? marka;
+  bool? debriyajliMi;
+
+  Motor(this.cc,this.marka,this.debriyajliMi){}
+  void result(){
+    print("cc:$cc, marka:$marka, debriyaj var mı: ${debriyajliMi == true? "Evet" : "Hayır" }");
+  }
+} */
 
 class Araba {
   int? modelYili;

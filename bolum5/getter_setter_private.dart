@@ -13,13 +13,18 @@ import 'veritabani_islemleri.dart';
  */
 main(List<String> args) {
   Musteri m1 = Musteri(150);
+  Musteri m2 = Musteri(-999);
+  Musteri m3 = Musteri(0);
   m1.bilgileriYazdir();
+
   m1.musteriNoAta = 952;
   print(m1.musteriNoSoyle);
 
-  Musteri m2 = Musteri(-999);
+  m3.musteriNoAta = 999999;
+  print(m3.musteriNoSoyle2);
 
   VeritabaniIslemleri db = VeritabaniIslemleri();
+  // VeritabaniIslemleri db2 = VeritabaniIslemleri.loginWithNameandPassword("serhat", "123");
 
   bool sonuc = db.baglan();
   if (sonuc) {
