@@ -1,24 +1,9 @@
-class CemberDaire {
-  int _yariCap = 1;
-  double _PI = 3.14;
+class CemberDaire{
+  dynamic yariCap;
+  double _pi = 3.14; 
 
-  CemberDaire(int yariCap) {
-    _yariCapKontrol = yariCap;
-  }
+  CemberDaire(dynamic this.yariCap){}
 
-  void set _yariCapKontrol(int deger) {
-    if (deger > 0) {
-      _yariCap = deger;
-    } else {
-      _yariCap = 1;
-    }
-  }
-
-  double cevreHesapla() {
-    return 2 * _PI * _yariCap;
-  }
-
-  double alanHesapla() {
-    return _PI * _yariCap * _yariCap;
-  }
+  dynamic cevreHesabi() => yariCap>0 ? 2*_pi*yariCap: "Yarıçap 0'dan büyük olmak zorundadır";
+  dynamic alanHesabi() => yariCap>0 ? _pi*yariCap*yariCap: "Yarıçap 0'dan büyük olmak zorundadır";
 }

@@ -1,11 +1,12 @@
 class Ogrenci {
-  int id;
-  int notDegeri;
+  int? id;
+  dynamic point;
 
-  Ogrenci({this.id = 1, this.notDegeri = 1});
+  Ogrenci(int this.id, dynamic this.point) {
+  }
 
   @override
   String toString() {
-    return "ID : $id Not değeri: $notDegeri";
+    return "ID: $id, Not değeri: $point";
   }
 }

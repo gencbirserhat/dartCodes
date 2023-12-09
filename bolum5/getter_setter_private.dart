@@ -1,4 +1,4 @@
-import 'ilk_sinif_ornek.dart';
+
 import 'musteri.dart';
 import 'veritabani_islemleri.dart';
 
@@ -19,7 +19,7 @@ main(List<String> args) {
 
   m1.musteriNoAta = 952;
   print(m1.musteriNoSoyle);
-
+  m2.musteriNoSoyle;
   m3.musteriNoAta = 999999;
   print(m3.musteriNoSoyle2);
 

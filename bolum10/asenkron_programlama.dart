@@ -1,24 +1,18 @@
-import 'dart:io';
-
-main(List<String> args) {
-  print("Anne cocugu ekmek almaya yollar");
-  print("Cocuk ekmek almak için evden cıkar");
-  Future<String> sonuc = uzunSurenIslem();
-
-  sonuc.then((String value) => print(value))
-  .catchError((hata) {
-    print(hata);
-  }).whenComplete(() => print("Ekmek alma operasyonu bitti"));
-
-  print("Peynir zeytin hazırlanır");
-  print("Kahvaltı hazır!");
+void main(List<String> args) {
+  print("cocuk ekmege gonderilir");
+  print("cocuk ekmek için evden çıkar");
+  var result = uzunSurenIslem();
+  result.then((value) => print(value)).catchError((e) {
+    print(e);
+  }).whenComplete(() => print("ekmek alma operasyonu bitti"));
+  print("peynir zeytin hazırlanır");
+  print("kahvaltı hazırlanır");
 }
 
 Future<String> uzunSurenIslem() {
-  Future<String> sonuc = Future.delayed(Duration(seconds: 2), () {
-    return "Çocuk ekmekle eve girer";
-    //throw Exception("Bakkalda ekmek kalmamış");
+  var sonuc = Future.delayed(Duration(seconds: 1), () {
+    // return "cocuk ekkmek ile eve girer";
+    throw Exception("bakkalda ekmek kalmamış");
   });
-
   return sonuc;
 }

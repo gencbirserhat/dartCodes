@@ -7,11 +7,11 @@ main(List<String> args) {
 }
 
 class Kisi {
-  String isim;
-  int yas;
-  Kisi(this.isim, this.yas);
+  String name;
+  int age;
+  Kisi(this.name, this.age);
   void kendiniTanit() {
-    print("Benim adım $isim ve yaşım $yas");
+    print("Benim adım $name ve yaşım $age");
   }
 }
 
